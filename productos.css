@@ -1,0 +1,132 @@
+header{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+.cabecera_container{
+    width: 85%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .85rem;
+    padding-bottom: .85rem;
+    
+}
+
+
+.cabecera_logo{
+    width: 9.3rem;
+    
+}
+
+.busqueda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right:50%;
+
+}
+
+
+.busqueda_campo{
+    padding: .75rem;
+    border-radius: 1.25rem;
+    border: none;
+    background: rgba(0, 174, 255, 0.041);
+}
+
+
+.busqueda_campo:focus{
+    outline: none;
+}
+
+.login{
+    width: 9rem;
+    height: 2.5rem;
+    font-size: 16px;
+    color:rgb(0, 162, 255);
+    background-color: white;
+    border: 2px solid rgb(0, 162, 255) ;
+}
+
+.contenido_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bann{
+    display: flex;
+    flex-direction:column;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position:center center ;
+    position:static;
+    justify-content: center;
+}
+
+
+.texto h1{
+    font-weight: 700;
+    font-size: 60px;
+    color:white;
+    margin-top: 80px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.texto p{
+   font-weight: 400;
+   font-size: 20px;
+   color: white;
+   margin-left:7.5rem ;
+   margin-bottom: 1.25rem ;
+   text-align: left;
+}
+
+
+.button-busqueda-login{
+    display: none;
+}
+@media (min-width:320px) and (max-width:768px){
+    .busqueda{
+        margin-right: 10%;
+    }
+    .busqueda_campo{
+       display:none;
+    }
+    .texto h1{
+        font-size:22px;
+        margin-left: 1rem;
+
+    }
+    .texto p{
+        font-size: 0.8rem;
+        margin-left: 1rem;
+    }
+    .login{
+        width: 6rem;
+    }
+    .button-busqueda{
+         display: none;
+    }
+    .button-busqueda-login{
+        display: inline;
+        background-color:white;
+        border: none;
+        margin-left: 0.62rem;
+    }.cabecera_container{
+        width: 90%;
+    }
+}  .cabecera_logo{
+    width: 7.5rem;
+}
+
